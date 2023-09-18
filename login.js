@@ -8,7 +8,8 @@ document.querySelector('#register').addEventListener('click', function(){
         password : document.querySelector("#registerPassword").value,
     }
     
-    fetch('http://localhost:3000/users/signup', {
+    // fetch('http://localhost:3000/users/signup', {
+    fetch('https://weather-app-backend-three.vercel.app/users/signup', {
         method: "POST",
         headers: {'Content-Type': "application/json"},
         body: JSON.stringify(user),
@@ -29,7 +30,8 @@ document.querySelector('#connection').addEventListener('click', function(){
         password : document.querySelector("#registerPassword").value,
     }
     
-    fetch('http://localhost:3000/users/signin', {
+    // fetch('http://localhost:3000/users/signin', {
+    fetch('https://weather-app-backend-three.vercel.app/users/signin', {
         method: "POST",
         headers: {'Content-Type': "application/json"},
         body: JSON.stringify(user),
